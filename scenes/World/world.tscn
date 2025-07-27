@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cqxjaep13m2b4"]
+
+[node name="World" type="Node3D"]
+
+[node name="Menu" type="Node" parent="."]
+
+[node name="BaseLayer" type="Node3D" parent="."]
+
+[node name="ObjectsLayer" type="Node3D" parent="."]
