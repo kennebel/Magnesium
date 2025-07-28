@@ -1,16 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqxjaep13m2b4"]
+[gd_scene load_steps=5 format=3 uid="uid://cqxjaep13m2b4"]
 
+[ext_resource type="Script" uid="uid://mnmeivlu2tmv" path="res://scenes/World/WorldControl.cs" id="1_bhb7g"]
 [ext_resource type="PackedScene" uid="uid://bvlpdpd2uv6pg" path="res://scenes/Ground/ground.tscn" id="1_eyogv"]
+[ext_resource type="PackedScene" uid="uid://dxirp4axacll5" path="res://scenes/World/cube_wireframe.tscn" id="2_bhb7g"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_eyogv"]
 
-[node name="World" type="Node3D"]
+[node name="World" type="Node3D" node_paths=PackedStringArray("UIElementsHolder")]
+script = ExtResource("1_bhb7g")
+WireframeCube = ExtResource("2_bhb7g")
+UIElementsHolder = NodePath("UI_3D")
 
-[node name="Menu" type="Node" parent="."]
+[node name="UI_2D" type="Node" parent="."]
+
+[node name="UI_3D" type="Node3D" parent="."]
 
 [node name="BaseLayer" type="Node3D" parent="."]
 
-[node name="Ground" parent="BaseLayer" instance=ExtResource("1_eyogv")]
+[node name="Ground" parent="BaseLayer" node_paths=PackedStringArray("World") instance=ExtResource("1_eyogv")]
+World = NodePath("../..")
 
 [node name="Sun" type="DirectionalLight3D" parent="BaseLayer"]
 transform = Transform3D(0.906049, 0.0846853, 0.414612, -0.423172, 0.181319, 0.887721, 0, -0.979771, 0.20012, 0, 0, 0)

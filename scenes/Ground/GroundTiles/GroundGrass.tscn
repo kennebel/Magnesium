@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpuabakucck4x"]
+
+[ext_resource type="Script" uid="uid://7x0d5pjy3u1o" path="res://scenes/Ground/GroundTileControl.cs" id="1_vq6u0"]
+[ext_resource type="PackedScene" uid="uid://bfbyx62tnrb4v" path="res://assets/ground/ground_grass.glb" id="2_lbs1a"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_vq6u0"]
+
+[node name="GroundGrass" type="Node3D" node_paths=PackedStringArray("Collider")]
+script = ExtResource("1_vq6u0")
+Collider = NodePath("StaticBody3D")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("SphereShape3D_vq6u0")
+
+[node name="VisualItem" parent="StaticBody3D" instance=ExtResource("2_lbs1a")]

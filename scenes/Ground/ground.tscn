@@ -1,11 +1,11 @@
 [gd_scene load_steps=3 format=3 uid="uid://bvlpdpd2uv6pg"]
 
 [ext_resource type="Script" uid="uid://ntb6gtb6r85r" path="res://scenes/Ground/GroundControl.cs" id="1_kw7vd"]
-[ext_resource type="PackedScene" uid="uid://bfbyx62tnrb4v" path="res://assets/ground/ground_grass.glb" id="2_qeq8d"]
+[ext_resource type="PackedScene" uid="uid://dpuabakucck4x" path="res://scenes/Ground/GroundTiles/GroundGrass.tscn" id="2_kw7vd"]
 
 [node name="Ground" type="Node3D" node_paths=PackedStringArray("TilesHolder")]
 script = ExtResource("1_kw7vd")
-GroundGrass = ExtResource("2_qeq8d")
+GroundGrass = ExtResource("2_kw7vd")
 TilesHolder = NodePath("Tiles")
 
 [node name="Tiles" type="Node3D" parent="."]

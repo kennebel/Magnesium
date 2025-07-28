@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxirp4axacll5"]
+
+[ext_resource type="Script" uid="uid://xdmop6188veg" path="res://scenes/World/CubeWireframeControl.cs" id="1_082ve"]
+[ext_resource type="PackedScene" uid="uid://bpkyktmsw86vc" path="res://assets/Blender/CubeWireframe.glb" id="1_a1r2d"]
+
+[node name="CubeWireframe" type="Node3D" node_paths=PackedStringArray("VisualItem")]
+script = ExtResource("1_082ve")
+VisualItem = NodePath("VisualItem")
+OffsetAmount = 0.25
+
+[node name="VisualItem" parent="." instance=ExtResource("1_a1r2d")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)

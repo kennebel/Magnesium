@@ -14,6 +14,8 @@ public partial class GroundControl : Node3D
 	[ExportGroup("Scene")]
 	[Export]
 	public Node3D TilesHolder{ get; set; }
+	[Export]
+	public WorldControl World { get; set; }
 
 	public override void _Ready()
 	{
@@ -29,14 +31,22 @@ public partial class GroundControl : Node3D
 		Utilities.RemoveChildren(TilesHolder);
 
 		Node3D NewChild;
-		for (int i = -5; i <= 5; i++)
+		var MinMax = 15;
+
+		int Count = 0;
+		for (int i = -MinMax; i <= MinMax; i++)
 		{
-			for (int j = -5; j <= 5; j++)
+			for (int j = -MinMax; j <= MinMax; j++)
 			{
 				NewChild = GroundGrass.Instantiate<Node3D>();
 				NewChild.Position = new Vector3(i, 0, j);
+				NewChild.Name = "Ground Grass " + Count.ToString();
 
 				TilesHolder.AddChild(NewChild);
+
+				((GroundTileControl)NewChild).NotifyClick = World;
+
+				Count++;
 			}
 		}
 	}
