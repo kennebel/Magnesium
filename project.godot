@@ -11,8 +11,17 @@ config_version=5
 [application]
 
 config/name="Magnesium"
-config/features=PackedStringArray("4.4")
+config/description="Messing around with world generation or something."
+config/version="0.1"
+run/main_scene="uid://cqxjaep13m2b4"
+config/features=PackedStringArray("4.4", "C#")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1024
+window/size/viewport_height=768
+window/stretch/mode="canvas_items"
 
 [dotnet]
 
