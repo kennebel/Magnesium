@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjt6woh5yg2p1"]
+
+[ext_resource type="PackedScene" uid="uid://bvlpdpd2uv6pg" path="res://scenes/Ground/ground.tscn" id="1_m7jug"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_e5tbj"]
+
+[node name="Fantasy" type="Node3D"]
+
+[node name="BaseLayer" type="Node3D" parent="."]
+
+[node name="Ground" parent="BaseLayer" node_paths=PackedStringArray("World") instance=ExtResource("1_m7jug")]
+World = NodePath("")
+
+[node name="Sun" type="DirectionalLight3D" parent="BaseLayer"]
+transform = Transform3D(0.906049, 0.0846853, 0.414612, -0.423172, 0.181319, 0.887721, 0, -0.979771, 0.20012, 0, 0, 0)
+
+[node name="ObjectsLayer" type="Node3D" parent="."]
+
+[node name="CameraHolder" type="Node3D" parent="."]
+
+[node name="CameraRig" type="Node3D" parent="CameraHolder"]
+
+[node name="Camera3D" type="Camera3D" parent="CameraHolder/CameraRig"]
+transform = Transform3D(1, 0, 0, 0, 0.827032, 0.562156, 0, -0.562156, 0.827032, 0, 1.60361, 2.27627)
+
+[node name="OriginMarker" type="MeshInstance3D" parent="CameraHolder"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
+mesh = SubResource("SphereMesh_e5tbj")
