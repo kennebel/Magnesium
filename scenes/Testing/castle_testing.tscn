@@ -1,0 +1,92 @@
+[gd_scene load_steps=23 format=3 uid="uid://dkhstdym0vgtw"]
+
+[ext_resource type="PackedScene" uid="uid://cudvb71uca0hq" path="res://assets/castle/flag-pennant.glb" id="1_oeopt"]
+[ext_resource type="PackedScene" uid="uid://bh4cal75e7xkg" path="res://assets/castle/ground.glb" id="2_20hox"]
+[ext_resource type="PackedScene" uid="uid://pbovsyqf1fiw" path="res://assets/castle/ground-hills.glb" id="3_j6va7"]
+[ext_resource type="PackedScene" uid="uid://dp14t064ro7r6" path="res://assets/castle/tower-base.glb" id="4_6awaj"]
+[ext_resource type="PackedScene" uid="uid://bg50iqogsys4b" path="res://assets/castle/tower-hexagon-base.glb" id="5_le7in"]
+[ext_resource type="PackedScene" uid="uid://byywxrfcja4cy" path="res://assets/castle/tower-hexagon-roof.glb" id="6_mhce0"]
+[ext_resource type="PackedScene" uid="uid://b0t56e4acykl8" path="res://assets/castle/tower-square-arch.glb" id="7_vge5o"]
+[ext_resource type="PackedScene" uid="uid://dmdeo5xfh8qj1" path="res://assets/castle/tower-square-base-color.glb" id="8_s2oea"]
+[ext_resource type="PackedScene" uid="uid://b0h211wnhn64e" path="res://assets/castle/tower-square-base-border.glb" id="9_ndohl"]
+[ext_resource type="PackedScene" uid="uid://bjxby3b87bpbs" path="res://assets/castle/tower-square-mid-color.glb" id="10_67a4d"]
+[ext_resource type="PackedScene" uid="uid://s1soh13dbir1" path="res://assets/castle/tower-square-top-roof.glb" id="11_66ovx"]
+[ext_resource type="PackedScene" uid="uid://befqofyh3b6rg" path="res://assets/castle/tower-top.glb" id="12_o76ef"]
+[ext_resource type="PackedScene" uid="uid://dx4d2kykrs1ne" path="res://assets/castle/tree-large.glb" id="13_8h81j"]
+[ext_resource type="PackedScene" uid="uid://bepka7acx18yd" path="res://assets/castle/wall-doorway.glb" id="14_n48fw"]
+[ext_resource type="PackedScene" uid="uid://dp800ipphdonq" path="res://assets/castle/wall-corner.glb" id="15_fjo14"]
+[ext_resource type="PackedScene" uid="uid://ceyqs573ps62h" path="res://assets/castle/wall.glb" id="16_68bqh"]
+[ext_resource type="PackedScene" uid="uid://db46quhxra7rl" path="res://assets/castle/wall-to-narrow.glb" id="17_nol6g"]
+[ext_resource type="PackedScene" uid="uid://xek68m5uj18b" path="res://assets/castle/wall-stud.glb" id="18_1hd6n"]
+[ext_resource type="PackedScene" uid="uid://c7yw3un8fw3ys" path="res://assets/castle/wall-pillar.glb" id="19_lehq5"]
+[ext_resource type="PackedScene" uid="uid://bhupr17rgeelh" path="res://assets/castle/wall-narrow-wood-fence.glb" id="20_m7eup"]
+[ext_resource type="PackedScene" uid="uid://ceokp5s0lkgkv" path="res://assets/castle/wall-corner-slant.glb" id="21_2y7jw"]
+[ext_resource type="PackedScene" uid="uid://dh5lj8qwlig14" path="res://assets/castle/wall-corner-half-tower.glb" id="22_xf3mp"]
+
+[node name="CastleTesting" type="Node3D"]
+
+[node name="flag-pennant2" parent="." instance=ExtResource("1_oeopt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.23514, -1.19209e-07, 0.797155)
+
+[node name="ground2" parent="." instance=ExtResource("2_20hox")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.80021, 1.19209e-07, 2.50185)
+
+[node name="ground-hills2" parent="." instance=ExtResource("3_j6va7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.51052, 0, 2.0261)
+
+[node name="tower-base2" parent="." instance=ExtResource("4_6awaj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74759, 0, 4.30858)
+
+[node name="tower-hexagon-base2" parent="." instance=ExtResource("5_le7in")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.98077, 0, 1.36158)
+
+[node name="tower-hexagon-roof2" parent="." instance=ExtResource("6_mhce0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.46872, 0, 1.5158)
+
+[node name="tower-square-arch2" parent="." instance=ExtResource("7_vge5o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0384779, 0, 0.150898)
+
+[node name="tower-square-base-color2" parent="." instance=ExtResource("8_s2oea")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0616, 2.38419e-07, -0.131634)
+
+[node name="tower-square-base-border2" parent="." instance=ExtResource("9_ndohl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.26467, 0, 1.32316)
+
+[node name="tower-square-mid-color2" parent="." instance=ExtResource("10_67a4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.14579, 0, 3.15514)
+
+[node name="tower-square-top-roof2" parent="." instance=ExtResource("11_66ovx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.39455, 0, -0.823593)
+
+[node name="tower-top2" parent="." instance=ExtResource("12_o76ef")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80275, 0, 0.714459)
+
+[node name="tree-large2" parent="." instance=ExtResource("13_8h81j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.976557, -2.38419e-07, 2.9056)
+
+[node name="wall-doorway2" parent="." instance=ExtResource("14_n48fw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.07215, 0, -0.746702)
+
+[node name="wall-corner2" parent="." instance=ExtResource("15_fjo14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.424866, 0, -4.11043)
+
+[node name="wall2" parent="." instance=ExtResource("16_68bqh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.53254, -2.38419e-07, -2.69362)
+
+[node name="wall-to-narrow2" parent="." instance=ExtResource("17_nol6g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.960873, 0, -5.12891)
+
+[node name="wall-stud2" parent="." instance=ExtResource("18_1hd6n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.653879, 0, -2.08886)
+
+[node name="wall-pillar2" parent="." instance=ExtResource("19_lehq5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.51627, 2.38419e-07, -6.83639)
+
+[node name="wall-narrow-wood-fence2" parent="." instance=ExtResource("20_m7eup")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.43212, 0, -3.48249)
+
+[node name="wall-corner-slant2" parent="." instance=ExtResource("21_2y7jw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.87932, -4.76837e-07, 4.33962)
+
+[node name="wall-corner-half-tower2" parent="." instance=ExtResource("22_xf3mp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.02731, 0, 1.77447)
