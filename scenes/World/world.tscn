@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cqxjaep13m2b4"]
+[gd_scene load_steps=21 format=3 uid="uid://cqxjaep13m2b4"]
 
 [ext_resource type="Script" uid="uid://mnmeivlu2tmv" path="res://scenes/World/WorldControl.cs" id="1_bhb7g"]
 [ext_resource type="PackedScene" uid="uid://dxirp4axacll5" path="res://scenes/World/cube_wireframe.tscn" id="2_bhb7g"]
@@ -11,6 +11,13 @@
 [ext_resource type="PackedScene" uid="uid://bg50iqogsys4b" path="res://assets/castle/tower-hexagon-base.glb" id="9_gvw3c"]
 [ext_resource type="PackedScene" uid="uid://hkgi8d4s3qju" path="res://assets/castle/tower-hexagon-mid.glb" id="10_a3mki"]
 [ext_resource type="PackedScene" uid="uid://dvmhwwavr0ydk" path="res://assets/castle/tower-hexagon-roof-secondary.glb" id="11_2ojv7"]
+[ext_resource type="PackedScene" uid="uid://m4adfea5eomk" path="res://assets/space/rocket_baseA.glb" id="12_a3mki"]
+[ext_resource type="PackedScene" uid="uid://ghxw2p0i7rc3" path="res://assets/space/rocket_fuelA.glb" id="13_2ojv7"]
+[ext_resource type="PackedScene" uid="uid://dfjs1woeiqjc2" path="res://assets/space/rocket_sidesB.glb" id="14_5vaqa"]
+[ext_resource type="PackedScene" uid="uid://w844rjantfrq" path="res://assets/space/rocket_sidesA.glb" id="15_rwrxo"]
+[ext_resource type="PackedScene" uid="uid://cmoudk4jlqy4" path="res://assets/space/rocket_topA.glb" id="16_0whgx"]
+[ext_resource type="PackedScene" uid="uid://rwhxlim77hg3" path="res://assets/space/crater.glb" id="17_jgj67"]
+[ext_resource type="PackedScene" uid="uid://bl5vibdfad5j3" path="res://assets/space/craterLarge.glb" id="18_ktit6"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_5vaqa"]
 
@@ -108,6 +115,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0)
 
 [node name="tower-hexagon-roof-secondary2" parent="BaseLayer/CastleRig/tower-hexagon-base3" instance=ExtResource("11_2ojv7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 0)
+
+[node name="RocketRig" type="Node3D" parent="BaseLayer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.97181, 0, 0)
+
+[node name="rocket_baseA2" parent="BaseLayer/RocketRig" instance=ExtResource("12_a3mki")]
+
+[node name="rocket_fuelA2" parent="BaseLayer/RocketRig" instance=ExtResource("13_2ojv7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="rocket_sidesB2" parent="BaseLayer/RocketRig" instance=ExtResource("14_5vaqa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="rocket_sidesA2" parent="BaseLayer/RocketRig" instance=ExtResource("15_rwrxo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+
+[node name="rocket_topA2" parent="BaseLayer/RocketRig" instance=ExtResource("16_0whgx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
+
+[node name="crater2" parent="BaseLayer/RocketRig" instance=ExtResource("17_jgj67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.979331, 0, 1.47906)
+
+[node name="craterLarge2" parent="BaseLayer/RocketRig" instance=ExtResource("18_ktit6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.714379, 0, 2.19815)
 
 [node name="ObjectsLayer" type="Node3D" parent="."]
 

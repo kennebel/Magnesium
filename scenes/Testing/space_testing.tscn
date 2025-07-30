@@ -1,0 +1,113 @@
+[gd_scene load_steps=28 format=3 uid="uid://b0cvbfsa5rjck"]
+
+[ext_resource type="PackedScene" uid="uid://rwhxlim77hg3" path="res://assets/space/crater.glb" id="1_56fa6"]
+[ext_resource type="PackedScene" uid="uid://bl5vibdfad5j3" path="res://assets/space/craterLarge.glb" id="2_h27ef"]
+[ext_resource type="PackedScene" uid="uid://njcm80cwd5ie" path="res://assets/space/gate_simple.glb" id="3_djsh8"]
+[ext_resource type="PackedScene" uid="uid://bbecpnxtc4br3" path="res://assets/space/gate_complex.glb" id="4_kf4kq"]
+[ext_resource type="PackedScene" uid="uid://b3n0e0wcndkx3" path="res://assets/space/machine_wireless.glb" id="5_8imv5"]
+[ext_resource type="PackedScene" uid="uid://bf0e5dbbknfqh" path="res://assets/space/meteor.glb" id="6_0p5xb"]
+[ext_resource type="PackedScene" uid="uid://bj0skjn8ir6f1" path="res://assets/space/monorail_trainFlat.glb" id="7_o1p0f"]
+[ext_resource type="PackedScene" uid="uid://p0hd3ilpd5lg" path="res://assets/space/monorail_trainEnd.glb" id="8_hvmej"]
+[ext_resource type="PackedScene" uid="uid://psmxns16m015" path="res://assets/space/pipe_corner.glb" id="9_13wko"]
+[ext_resource type="PackedScene" uid="uid://ciyju2c1lp7je" path="res://assets/space/pipe_cross.glb" id="10_cm8gt"]
+[ext_resource type="PackedScene" uid="uid://dd44h14u4n6lb" path="res://assets/space/pipe_entrance.glb" id="11_wqvm0"]
+[ext_resource type="PackedScene" uid="uid://bnuo786u371oi" path="res://assets/space/pipe_ringHigh.glb" id="12_uap3y"]
+[ext_resource type="PackedScene" uid="uid://dm0o5yuws8cqp" path="res://assets/space/rail.glb" id="13_1dg4b"]
+[ext_resource type="PackedScene" uid="uid://bvespx1mttjyw" path="res://assets/space/rail_corner.glb" id="14_ceqxg"]
+[ext_resource type="PackedScene" uid="uid://dol0ph0u76bt6" path="res://assets/space/rocket_baseB.glb" id="15_44n6i"]
+[ext_resource type="PackedScene" uid="uid://c34fn454oycwn" path="res://assets/space/rocket_topB.glb" id="16_1nffp"]
+[ext_resource type="PackedScene" uid="uid://clbcr2xmm4u1m" path="res://assets/space/rover.glb" id="17_8q55b"]
+[ext_resource type="PackedScene" uid="uid://dhro7y3caklt" path="res://assets/space/satelliteDish_large.glb" id="18_6ah7m"]
+[ext_resource type="PackedScene" uid="uid://bwes6fdk1s403" path="res://assets/space/structure_diagonal.glb" id="19_twqw2"]
+[ext_resource type="PackedScene" uid="uid://gmnirlttrvk0" path="res://assets/space/rock_crystalsLargeA.glb" id="20_rrqcl"]
+[ext_resource type="PackedScene" uid="uid://ctsud8po2pfha" path="res://assets/space/rock_crystalsLargeB.glb" id="21_embds"]
+[ext_resource type="PackedScene" uid="uid://7roreuvmxrsp" path="res://assets/space/rocket_fuelB.glb" id="22_nxful"]
+[ext_resource type="PackedScene" uid="uid://m4adfea5eomk" path="res://assets/space/rocket_baseA.glb" id="23_gc5uu"]
+[ext_resource type="PackedScene" uid="uid://ghxw2p0i7rc3" path="res://assets/space/rocket_fuelA.glb" id="24_j31xp"]
+[ext_resource type="PackedScene" uid="uid://dfjs1woeiqjc2" path="res://assets/space/rocket_sidesB.glb" id="25_4cdhg"]
+[ext_resource type="PackedScene" uid="uid://w844rjantfrq" path="res://assets/space/rocket_sidesA.glb" id="26_wya5l"]
+[ext_resource type="PackedScene" uid="uid://cmoudk4jlqy4" path="res://assets/space/rocket_topA.glb" id="27_7isw3"]
+
+[node name="SpaceTesting" type="Node3D"]
+
+[node name="crater2" parent="." instance=ExtResource("1_56fa6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0386668, 0, 1.51198)
+
+[node name="craterLarge2" parent="." instance=ExtResource("2_h27ef")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.872782, 0, 3.05572)
+
+[node name="gate_simple2" parent="." instance=ExtResource("3_djsh8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.83841, 0, 1.9322)
+
+[node name="gate_complex2" parent="." instance=ExtResource("4_kf4kq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.89599, 0, 1.43692)
+
+[node name="machine_wireless2" parent="." instance=ExtResource("5_8imv5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.33455, 0, 3.15887)
+
+[node name="meteor2" parent="." instance=ExtResource("6_0p5xb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.87306, 0, 4.48585)
+
+[node name="monorail_trainFlat2" parent="." instance=ExtResource("7_o1p0f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.34676, 0, -0.202388)
+
+[node name="monorail_trainEnd2" parent="." instance=ExtResource("8_hvmej")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48496, 0, 2.15397)
+
+[node name="pipe_corner2" parent="." instance=ExtResource("9_13wko")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.26177, 0, 3.53617)
+
+[node name="pipe_cross2" parent="." instance=ExtResource("10_cm8gt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.27108, 0, 2.32783)
+
+[node name="pipe_entrance2" parent="." instance=ExtResource("11_wqvm0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.36361, 0, 1.06658)
+
+[node name="pipe_ringHigh2" parent="." instance=ExtResource("12_uap3y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.79901, 0, 5.2784)
+
+[node name="rail2" parent="." instance=ExtResource("13_1dg4b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.47231, 4.76837e-07, -3.05839)
+
+[node name="rail_corner2" parent="." instance=ExtResource("14_ceqxg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.20199, 4.76837e-07, -4.42506)
+
+[node name="rocket_baseB2" parent="." instance=ExtResource("15_44n6i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.41319, 0, -1.2671)
+
+[node name="rocket_topB2" parent="." instance=ExtResource("16_1nffp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.97137, 0, -2.00307)
+
+[node name="rover2" parent="." instance=ExtResource("17_8q55b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.35286, 0, -3.28944)
+
+[node name="satelliteDish_large2" parent="." instance=ExtResource("18_6ah7m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.58446, 0, -1.14483)
+
+[node name="structure_diagonal2" parent="." instance=ExtResource("19_twqw2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.223785, 0, -5.93593)
+
+[node name="rock_crystalsLargeA2" parent="." instance=ExtResource("20_rrqcl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.89351, 0, 3.28307)
+
+[node name="rock_crystalsLargeB2" parent="." instance=ExtResource("21_embds")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.49392, 0, 5.64709)
+
+[node name="rocket_fuelB2" parent="." instance=ExtResource("22_nxful")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.96411, -4.76837e-07, -8.39538)
+
+[node name="RocketRig" type="Node3D" parent="."]
+
+[node name="rocket_baseA2" parent="RocketRig" instance=ExtResource("23_gc5uu")]
+
+[node name="rocket_fuelA2" parent="RocketRig" instance=ExtResource("24_j31xp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="rocket_sidesB2" parent="RocketRig" instance=ExtResource("25_4cdhg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="rocket_sidesA2" parent="RocketRig" instance=ExtResource("26_wya5l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+
+[node name="rocket_topA2" parent="RocketRig" instance=ExtResource("27_7isw3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
